@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"dryrun/internal/value"
+	"ghostrun/internal/value"
 )
 
 func TestRecorderBasic(t *testing.T) {

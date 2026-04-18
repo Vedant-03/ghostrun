@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"os"
 
-	"dryrun/internal/interpreter"
-	"dryrun/internal/loader"
-	"dryrun/internal/server"
+	"ghostrun/internal/interpreter"
+	"ghostrun/internal/loader"
+	"ghostrun/internal/server"
 
 	"github.com/spf13/cobra"
 )
@@ -23,7 +23,7 @@ var traceCmd = &cobra.Command{
 tracking variable values and function calls. Results are shown in an interactive web UI.
 
 Example:
-  dryrun trace ./pkg/order ProcessOrder --input '{"o": {"ID": 1, "Amount": 150}}'`,
+  ghostrun trace ./pkg/order ProcessOrder --input '{"o": {"ID": 1, "Amount": 150}}'`,
 	Args: cobra.ExactArgs(2),
 	RunE: func(cmd *cobra.Command, args []string) error {
 		pkgPath := args[0]

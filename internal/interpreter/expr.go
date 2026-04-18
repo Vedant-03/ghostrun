@@ -6,7 +6,7 @@ import (
 	"go/token"
 	"strconv"
 
-	"dryrun/internal/value"
+	"ghostrun/internal/value"
 )
 
 // evalExpr evaluates an AST expression and returns a Value

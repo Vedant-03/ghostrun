@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"os"
 
-	"dryrun/internal/callgraph"
-	"dryrun/internal/loader"
-	"dryrun/internal/server"
+	"ghostrun/internal/callgraph"
+	"ghostrun/internal/loader"
+	"ghostrun/internal/server"
 
 	"github.com/spf13/cobra"
 )
@@ -20,7 +20,7 @@ var navigateCmd = &cobra.Command{
 in a web browser. No execution or inputs needed — just browse the code structure.
 
 Example:
-  dryrun navigate ./pkg/order`,
+  ghostrun navigate ./pkg/order`,
 	Args: cobra.ExactArgs(1),
 	RunE: func(cmd *cobra.Command, args []string) error {
 		pkgPath := args[0]

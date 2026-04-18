@@ -2,7 +2,7 @@ package scope
 
 import (
 	"fmt"
-	"dryrun/internal/value"
+	"ghostrun/internal/value"
 )
 
 // Scope represents a variable binding scope with optional parent

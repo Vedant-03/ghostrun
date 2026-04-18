@@ -8,9 +8,9 @@ import (
 
 	"go/ast"
 
-	"dryrun/internal/loader"
-	"dryrun/internal/trace"
-	"dryrun/internal/value"
+	"ghostrun/internal/loader"
+	"ghostrun/internal/trace"
+	"ghostrun/internal/value"
 )
 
 func loadTestdata(t *testing.T) *loader.PackageData {

@@ -1,6 +1,6 @@
 package main
 
-import "dryrun/cmd"
+import "ghostrun/cmd"
 
 func main() {
 	cmd.Execute()

@@ -1,4 +1,4 @@
-module dryrun
+module ghostrun
 
 go 1.25.6
 

@@ -5,7 +5,7 @@ import (
 	"go/ast"
 	"go/token"
 
-	"dryrun/internal/value"
+	"ghostrun/internal/value"
 )
 
 // signalReturn is used to propagate return values up the call stack

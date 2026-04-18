@@ -2,7 +2,7 @@ package scope
 
 import (
 	"testing"
-	"dryrun/internal/value"
+	"ghostrun/internal/value"
 )
 
 func TestDefineAndGet(t *testing.T) {

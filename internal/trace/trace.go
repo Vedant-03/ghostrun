@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"sync/atomic"
 
-	"dryrun/internal/value"
+	"ghostrun/internal/value"
 )
 
 var nodeIDCounter int64

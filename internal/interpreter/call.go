@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"go/ast"
 
-	"dryrun/internal/loader"
-	"dryrun/internal/scope"
-	"dryrun/internal/value"
+	"ghostrun/internal/loader"
+	"ghostrun/internal/scope"
+	"ghostrun/internal/value"
 )
 
 // evalCallExpr evaluates a function call expression

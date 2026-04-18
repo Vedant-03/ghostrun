@@ -9,9 +9,9 @@ import (
 	"os"
 	"strings"
 
-	"dryrun/internal/callgraph"
-	"dryrun/internal/loader"
-	"dryrun/internal/trace"
+	"ghostrun/internal/callgraph"
+	"ghostrun/internal/loader"
+	"ghostrun/internal/trace"
 )
 
 //go:embed ui/*

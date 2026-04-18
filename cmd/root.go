@@ -8,9 +8,9 @@ import (
 )
 
 var rootCmd = &cobra.Command{
-	Use:   "dryrun",
+	Use:   "ghostrun",
 	Short: "Static Go code tracer — dry run your code without executing it",
-	Long: `DryRun parses Go source code and lets you trace execution step-by-step,
+	Long: `Ghostrun parses Go source code and lets you trace execution step-by-step,
 tracking variable values and following function calls — all without compiling or running the code.`,
 }
 

@@ -6,10 +6,10 @@ import (
 	"go/ast"
 	"os"
 
-	"dryrun/internal/loader"
-	"dryrun/internal/scope"
-	"dryrun/internal/trace"
-	"dryrun/internal/value"
+	"ghostrun/internal/loader"
+	"ghostrun/internal/scope"
+	"ghostrun/internal/trace"
+	"ghostrun/internal/value"
 )
 
 // StubFunc is a user-defined stub that returns fixed values for external functions
