@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ghostrun — Static Go Tracer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <header id="header">
+    <div class="logo">🧪 Ghostrun</div>
+    <div id="mode-badge" class="badge">loading...</div>
+    <div id="func-name" class="func-name"></div>
+    <div class="header-right">
+      <span id="step-counter" class="step-counter"></span>
+    </div>
+  </header>
+
+  <div id="main-layout">
+    <!-- Left Panel: Call Tree -->
+    <div id="panel-tree" class="panel">
+      <div class="panel-header">
+        <span>📂 Call Tree</span>
+        <button id="btn-expand-all" class="btn-sm" title="Expand All">⊞</button>
+        <button id="btn-collapse-all" class="btn-sm" title="Collapse All">⊟</button>
+      </div>
+      <div id="call-tree" class="panel-body"></div>
+    </div>
+
+    <!-- Resizer -->
+    <div class="resizer" id="resizer-left"></div>
+
+    <!-- Center Panel: Source Code -->
+    <div id="panel-source" class="panel">
+      <div class="panel-header">
+        <span>📄 Source</span>
+        <span id="source-file" class="source-file"></span>
+      </div>
+      <div id="source-code" class="panel-body source-view"></div>
+    </div>
+
+    <!-- Resizer -->
+    <div class="resizer" id="resizer-right"></div>
+
+    <!-- Right Panel: Variables -->
+    <div id="panel-vars" class="panel">
+      <div class="panel-header">
+        <span>📊 Variables</span>
+        <span id="var-context" class="var-context"></span>
+      </div>
+      <div id="variables" class="panel-body"></div>
+    </div>
+  </div>
+
+  <!-- Bottom Step Controls -->
+  <footer id="controls">
+    <div class="controls-left">
+      <button id="btn-prev" class="btn" title="Previous Step (←)">◀ Prev</button>
+      <button id="btn-next" class="btn" title="Next Step (→)">Next ▶</button>
+      <button id="btn-step-into" class="btn" title="Step Into (Enter)">↓ Into</button>
+      <button id="btn-step-over" class="btn" title="Step Over (Space)">→ Over</button>
+    </div>
+    <div class="controls-center">
+      <input type="range" id="step-slider" min="0" max="0" value="0">
+    </div>
+    <div class="controls-right">
+      <button id="btn-restart" class="btn" title="Restart">⟲ Restart</button>
+    </div>
+  </footer>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
