@@ -1,4 +1,4 @@
-# 👻 Ghostrun
+# Ghostrun
 
 **Trace Go code execution without running it.**
 
