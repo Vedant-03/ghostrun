@@ -161,8 +161,8 @@ All of this is displayed in an interactive three-panel web UI:
 | Compound assignments (`+=`, `-=`) | ✅ |
 | break, continue | ✅ |
 | Builtins (len, append, make) | ✅ |
-| Goroutines | ❌ Intentionally skipped |
-| Channels | ❌ |
+| Goroutines | ❌ (to be scoped) |
+| Channels | ❌ (planned) |
 | Defer | ❌ (planned) |
 | Closures | ❌ (planned) |
 
@@ -303,19 +303,6 @@ Flags:
   -p, --port int   Port for the web UI (default 8080)
   -h, --help       help for navigate
 ```
-
----
-
-## Roadmap
-
-- [ ] `defer` statement support
-- [ ] Closures / function literals
-- [ ] Type switch (`switch v := x.(type)`)
-- [ ] VS Code extension (trace from editor, Cmd+Click integration)
-- [ ] "Trace from here" context menu in web UI
-- [ ] Pre-configured stubs via YAML config file
-- [ ] Export trace as Mermaid/PlantUML sequence diagram
-- [ ] Multi-package trace (follow calls across module boundaries)
 
 ---
 
